@@ -1,7 +1,4 @@
-
-
 ERB::Util.module_eval do  # :nodoc:
-
   def html_escape_with_output_safety(value)
     # Values which don't respond to html_safe, should be checked
     if value.respond_to?(:html_safe?) && value.html_safe?

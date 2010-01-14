@@ -11,6 +11,7 @@ begin
   end
 
   require 'rails_xss_escaping'
+  require 'rails_xss_helper'
   require 'av_patch'
 rescue LoadError
   puts "Could not load all modules required by rails_xss. Please make sure erubis is installed an try again."
